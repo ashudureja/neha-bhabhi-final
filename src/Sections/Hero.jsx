@@ -108,7 +108,7 @@ const Hero = ({ isContentVisible }) => {
         {/* Neha Valecha */}
       </motion.h1>
       
-      <div className="relative mt-20 sm:mt-0">
+      <div className="relative mt-10 sm:mt-0">
         <H1 text="Backend Developer"/>
 
         <MySVG />

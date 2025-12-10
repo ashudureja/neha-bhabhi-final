@@ -20,9 +20,9 @@ const About = () => {
        <div className='flex mt-10 flex-col gap-20 w-full h-full items-center justify-center'>
          <AnimatedPara para={para}/>
         <Tools/>
-        <div className=' -mt-40 sm:-mt-20 text-center '>
-          <AnimatedPara para={para2}/>
-        </div>
+       
+          {/* <AnimatedPara para={para2}/> */}
+      
        </div>
 
         
