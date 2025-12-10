@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --main: #eeeef3;
+  --blk: #131213;
+  --wht: #eaeaea;
+  --shadow-brand: -82px 54px 27px 0px rgba(0,0,0,0.01),
+  -52px 35px 25px 0px rgba(0,0,0,0.04),
+  -29px 19px 21px 0px rgba(0,0,0,0.15),
+  -13px 9px 16px 0px rgba(0,0,0,0.25),
+  -3px 2px 9px 0px rgba(0,0,0,0.29);
+
+  --shadow-yellow: -82px 54px 27px 0px rgba(233,165,0,0.01),
+  -52px 35px 25px 0px rgba(233,165,0,0.04),
+  -29px 19px 21px 0px rgba(233,165,0,0.15),
+  -13px 9px 16px 0px rgba(233,165,0.25),
+  -3px 2px 9px 0px rgba(233,165,0,0.29);
+ 
+  
+}
+
+@theme inline {
+
+  --color-main: var(--main);
+  --color-blk: var(--blk);
+  --color-wht: var(--wht);
+
+ 
+  --shadow-brand: var(--shadow-brand);
+   --shadow-yellow: var(--shadow-yellow);
+
+}
+
+
+
+@font-face {
+  font-family: 'para';
+  font-weight: 400;
+  src: url('/fonts/para.otf') format('opentype');
+}
+
+
+@font-face {
+  font-family: 'heading';
+  font-weight: 400;
+  src: url('/fonts/heading.woff2') format('woff2');
+}
+
+
+@font-face {
+  font-family: 'signature';
+  font-weight: 100;
+  src: url('/fonts/signature.otf') format('opentype');
+}
+
+
+.light {
+filter: blur(2rem);
+mix-blend-mode: color;
+}
+
+.framer-17607ts {
+  z-index: 0;
+  flex: none;
+  height: 288px;
+  position: absolute;
+  bottom: 363px;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+
+.shadow-css{
+ box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
