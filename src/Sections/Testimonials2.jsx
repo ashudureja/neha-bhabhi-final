@@ -58,7 +58,7 @@ const Testimonials2 = () => {
       ref={containerRef} 
       className='min-h-screen bg-black relative z-10 rounded-tl-9xl rounded-tr-9xl w-full p-40 flex flex-col gap-20'
     >
-      <div className="flex w-full h-full absolute left-1/2 -translate-x-1/2 gap-2 items-center justify-between  ">
+      <div className="hidden sm:flex w-full h-full absolute left-1/2 -translate-x-1/2 gap-2 items-center justify-between  ">
        <div className=" border  border-dashed border-transparent h-full w-[1px] -z-0 mask-t-from-50% "></div>
        <div className=" border  border-dashed border-white/30 h-full w-[1px] -z-0 mask-t-from-70% mask-b-from-50%"></div>
        <div className=" border  border-dashed border-transparent h-full w-[1px] -z-0 mask-t-from-50%"></div>

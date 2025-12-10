@@ -66,9 +66,9 @@ const Expertise = () => {
   }, []);
 
   return (
-    <div className="min-h-screen w-full pt-20 md:pt-40 flex flex-col items-center px-4 md:px-8 overflow-hidden">
+    <div className="min-h-screen w-full pt-20 pb-2 md:pt-40 flex flex-col items-center px-4 md:px-8 overflow-hidden">
       <H3>[EXPERTISE]</H3>
-      <div className="grid grid-cols-1 md:grid-cols-6 md:grid-rows-7 w-full  md:h-[110vh] gap-3 md:gap-5 mt-10 md:mt-20">
+      <div className="grid grid-cols-1 md:grid-cols-6 md:grid-rows-7 w-full  md:h-[110vh] gap-3 md:gap-5 mt-15 md:mt-20">
         {expertiseItems.map((item) => (
           <motion.div
             key={item.id}
@@ -76,7 +76,7 @@ const Expertise = () => {
             whileInView={{ y: 1 }}
             transition={{ duration: 1, ease: circOut }}
             viewport={{ once: true }}
-            className={`${item.gridClass} shadow-[0_3px_10px_rgb(0,0,0,0.2)] h-60 md:h-full  overflow-hidden bg-gray-200 backdrop-blur-3xl rounded-xl p-2`}
+            className={`${item.gridClass} shadow-[0_3px_10px_rgb(0,0,0,0.2)] h-65 md:h-full  overflow-hidden bg-gray-200 backdrop-blur-3xl rounded-xl p-2`}
           >
             <motion.div
               initial={{ scale: 1.3 }}
@@ -133,7 +133,7 @@ const Expertise = () => {
                 <h3 className="text-lg md:text-2xl text-shadow-lg uppercase relative tracking-normal font-[heading]">
                   {item.title}
                 </h3>
-                <p className="text-black text-sm md:text-lg mt-1 md:mt-2 font-[para] max-w-xs md:max-w-sm">
+                <p className="text-black text-sm  md:text-lg mt-1 md:mt-2 font-[para] max-w-[70vw] md:max-w-sm">
                   {item.description}
                 </p>
               </motion.div>

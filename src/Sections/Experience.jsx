@@ -32,10 +32,10 @@ const ExperienceCard = ({ exp, index }) => {
         y,
         scale
       }}
-      className="w-full  relative border border-gray-50 bg-gray-200 backdrop-blur-3xl  rounded-4xl p-3 shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
+      className="w-full  relative border border-gray-50 bg-gray-200 backdrop-blur-3xl  rounded-4xl p-2 sm:p-3 shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
     >
       <motion.div 
-        className="relative bg-gradient-to-b from-transparent via-yellow-50 to-yellow-400   overflow-hidden rounded-3xl h-70 p-6 border border-[#e0e0eb] flex flex-col shadow-[0_4px_6px_-2px_rgb(151_151_185)]"
+        className="relative bg-gradient-to-b from-transparent via-yellow-50 to-yellow-400   overflow-hidden rounded-3xl h-full sm:h-70 p-6 border border-[#e0e0eb] flex flex-col shadow-[0_4px_6px_-2px_rgb(151_151_185)]"
       >
        {/* <div className=' bg-[url("./images/light.svg")] bg-center inset-0 absolute -z-10 ' style={{opacity,y}}></div> */}
        <SparklesCore
@@ -55,10 +55,10 @@ const ExperienceCard = ({ exp, index }) => {
             {exp.period}
           </div>
           
-          <h4 className="text-2xl font-[heading] text-black text-shadow-lg mb-1">{exp.title}</h4>
-          <p className="text-xl font-[heading] text-black text-shadow-lg mb-3">{exp.company}</p>
+          <h4 className="text-[4.5vw] sm:text-2xl font-[heading] text-black text-shadow-lg mb-1">{exp.title}</h4>
+          <p className="text-[5vw] sm:text-xl font-[heading] text-black text-shadow-lg mb-3">{exp.company}</p>
           
-          <ul className="space-y-2 font-[para] text-lg text-black">
+          <ul className="space-y-2 font-[para] text-[4vw] sm:text-lg text-black">
             {exp.points.map((point, i) => (
               <li key={i} className="flex items-start">
                 <span className="text-black mr-2 flex-shrink-0">•</span>
@@ -121,11 +121,11 @@ const Experience = () => {
   ]
 
   return (
-    <div className='min-h-screen w-full flex flex-col items-center justify-center py-20 pt-40 overflow-hidden '>
+    <div className='min-h-screen w-full flex flex-col items-center justify-center py-20 pt-40 px-2 overflow-hidden '>
       {/* <div className='max-w-8xl  '> */}
        
      <H3>[EXPERIENCE]</H3>
-        <div className='flex justify-between  mt-20 h-full w-full'>
+        <div className='flex justify-between  mt-5 sm:mt-20 h-full w-full'>
           <LeftLine/>
           <div className='flex flex-col gap-6 mt-8 max-w-5xl'>
           {experiences.map((exp, index) => (
