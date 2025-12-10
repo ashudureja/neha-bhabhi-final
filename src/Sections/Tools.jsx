@@ -28,63 +28,6 @@ import { BiLogoSpringBoot } from "react-icons/bi";
 
 const Tools = () => {
 
-  // const row1 = [
-  //   <FaJava className='text-6xl text-black' />,
-  //   null,
-  //   null,
-  //   <SiNodedotjs className='text-6xl text-black' />,
-  //   null,
-  //   null,
-  //   <SiJavascript className='text-6xl text-black' />,
-  //   null,
-  //   null,
-  //   <SiReact className='text-6xl text-black' />,
-  //   null,
-  // ];
-
-  // const row2 = [
-  //   <SiKubernetes className='text-6xl text-black' />,
-  //   null,
-  //   null,
-  //   <SiDocker className='text-6xl text-black' />,
-  //   null,
-  //   null,
-  //   <SiKubernetes className='text-6xl text-black' />,
-  //   null,
-  //   null,
-  //   <SiDocker className='text-6xl text-black' />,
-  //   null,
-  //   null,
-  // ];
-
-  // const row3 = [
-  //   null,
-  //   <SiPython className='text-6xl text-black' />,
-  //   null,
-  //   null,
-  //   <SiJavascript className='text-6xl text-black' />,
-  //   null,
-  //   null,
-  //   <SiGit className='text-6xl text-black' />,
-  //   null,
-  //   null,
-  //   <BiLogoSpringBoot className='text-6xl text-black' />,
-  // ];
-
-  // const row4 = [
-  //   <FaAws className='text-6xl text-black' />,
-  //   null,
-  //   null,
-  //   <FaJava className='text-6xl text-black' />,
-  //   null,
-  //   null,
-  //   null,
-  //   <FaAws className='text-6xl text-black' />,
-  //   null,
-  //   null,
-  //   <SiNodedotjs className='text-6xl text-black' />,
-  //   null,
-  // ];
 
 
   
@@ -151,7 +94,7 @@ null,
  
 
   return (
-    <section className="relative w-full min-h-screen   flex flex-col items-center pt-20  overflow-hidden">
+    <section className="relative w-full min-h-screen flex flex-col items-center   ">
      
       
 
@@ -214,10 +157,6 @@ null,
          
         </div>
       </div>
-
-      {/* --- Gradient Fades --- */}
-      {/* <div className="absolute top-80 bottom-0 left-0 w-20 md:w-100 z-20 bg-gradient-to-r from-blk to-transparent  " />
-      <div className="absolute top-40 bottom-0  right-0 w-20 md:w-30 bg-gradient-to-l from-blk to-transparent  z-20" /> */}
 
      
      

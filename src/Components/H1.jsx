@@ -27,7 +27,7 @@ const H1 = ({text}) => {
                 },
               }}
                viewport={{ once: true }}
-              className="text-[18vw] sm:text-[10vw] pointer-events-none text-shadow-lg relative tracking-tighter text-center font-[signature]"
+              className="text-[20vw] sm:text-[10vw] pointer-events-none text-shadow-lg relative tracking-tighter text-center font-[signature]"
             >
               {word}
             </motion.span>

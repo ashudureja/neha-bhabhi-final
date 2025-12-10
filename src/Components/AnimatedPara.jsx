@@ -13,7 +13,7 @@ const AnimatedPara = ({ para }) => {
   return (
     <p
       ref={container}
-      className="text-[1.8vw] text-black/80 font-[para] max-w-xl text-center mt-20 flex-wrap flex  gap-1 items-center justify-center"
+      className="text-[4vw] sm:text-[1.8vw] text-black/80 font-[para] max-w-xs sm:max-w-xl text-center  flex-wrap flex  gap-1 items-center justify-center"
     >
       {words.map((word, i) => {
         const start = i / words.length;

@@ -13,14 +13,16 @@ const About = () => {
 
    
   return (
-    <div className=' w-full flex flex-col items-center pt-40 '>
+    <div className=' w-full flex flex-col items-center pt-25 sm:pt-40  overflow-hidden'>
       
         <H3>[ABOUT ME]</H3>
 
-       <div className='flex flex-col gap-10 w-full h-full items-center justify-center'>
+       <div className='flex mt-10 flex-col gap-20 w-full h-full items-center justify-center'>
          <AnimatedPara para={para}/>
         <Tools/>
-        <AnimatedPara para={para2}/>
+        <div className=' -mt-40 sm:-mt-20 text-center '>
+          <AnimatedPara para={para2}/>
+        </div>
        </div>
 
         

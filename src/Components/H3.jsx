@@ -27,7 +27,7 @@ const H3 = ({ children, color = "black" }) => {
                 },
               }}
               //  viewport={{ once: true }}
-      className={`text-[3vw] text-shadow-lg uppercase relative tracking-tighter text-center font-[heading]  ${colorClass}`}
+      className={`text-[9vw] sm:text-[3vw] text-shadow-lg uppercase relative tracking-tighter text-center font-[heading]  ${colorClass}`}
     >
       {children}
     </motion.h3>

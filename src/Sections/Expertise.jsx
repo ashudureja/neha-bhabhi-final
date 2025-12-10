@@ -49,7 +49,7 @@ const expertiseItems = [
 
 const Expertise = () => {
   return (
-    <div className="min-h-screen w-full pt-40 flex flex-col items-center px-8">
+    <div className="min-h-screen w-full pt-40 flex flex-col items-center px-8 overflow-hidden">
       <H3>[EXPERTISE]</H3>
       <div className="grid grid-cols-6 grid-rows-7 w-full h-[110vh] gap-5 mt-20">
         {expertiseItems.map((item) => (
