@@ -21,9 +21,9 @@ const expertiseItems = [
     bgImage: "./images/bento.png",
     decorImage: "./images/cloudbn.png",
     decorClass: "h-60 md:h-200 object-cover",
-    decorSpeedMobile: "0.05",
+    decorSpeedMobile: "0.03",
     decorSpeedDesktop: "0.2",
-    decorContainer: "flex flex-col items-center justify-center gap-4 absolute -top-2 md:-top-4 right-2",
+    decorContainer: "flex flex-col items-center justify-center gap-4 absolute  md:-top-4 right-2",
     title: "Cloud Architecture & Migration",
     description: "Specializing in AWS migrations and container orchestration with Kubernetes and Docker for scalable cloud solutions."
   },
@@ -68,7 +68,7 @@ const Expertise = () => {
   return (
     <div className="min-h-screen w-full pt-20 md:pt-40 flex flex-col items-center px-4 md:px-8 overflow-hidden">
       <H3>[EXPERTISE]</H3>
-      <div className="grid grid-cols-1 md:grid-cols-6 md:grid-rows-7 w-full h-[120vh] md:h-[110vh] gap-3 md:gap-5 mt-10 md:mt-20">
+      <div className="grid grid-cols-1 md:grid-cols-6 md:grid-rows-7 w-full  md:h-[110vh] gap-3 md:gap-5 mt-10 md:mt-20">
         {expertiseItems.map((item) => (
           <motion.div
             key={item.id}
@@ -76,7 +76,7 @@ const Expertise = () => {
             whileInView={{ y: 1 }}
             transition={{ duration: 1, ease: circOut }}
             viewport={{ once: true }}
-            className={`${item.gridClass} shadow-[0_3px_10px_rgb(0,0,0,0.2)] overflow-hidden bg-gray-200 backdrop-blur-3xl rounded-xl p-2`}
+            className={`${item.gridClass} shadow-[0_3px_10px_rgb(0,0,0,0.2)] h-60 md:h-full  overflow-hidden bg-gray-200 backdrop-blur-3xl rounded-xl p-2`}
           >
             <motion.div
               initial={{ scale: 1.3 }}
