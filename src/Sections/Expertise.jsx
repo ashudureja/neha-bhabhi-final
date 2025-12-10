@@ -6,52 +6,69 @@ import H3 from "../Components/H3";
 const expertiseItems = [
   {
     id: 1,
-    gridClass: "col-span-3 row-span-3",
+    gridClass: "md:col-span-3 md:row-span-3",
     bgImage: "./images/sphere1.png",
     decorImage: "./images/api.png",
-    decorClass: "h-100 absolute right-0 -bottom-10 object-cover",
-    decorSpeed: "0.03",
+    decorClass: "h-60 md:h-100 absolute right-0 -bottom-5 md:-bottom-10 object-cover",
+    decorSpeedMobile: "0.05",
+    decorSpeedDesktop: "0.03",
     title: "API Development",
     description: "Building robust and scalable APIs with Node.js, Express, and FastAPI"
   },
   {
     id: 2,
-    gridClass: "col-span-3 row-span-4",
+    gridClass: " md:col-span-3 md:row-span-4",
     bgImage: "./images/bento.png",
     decorImage: "./images/cloudbn.png",
-    decorClass: "h-200 object-cover",
-    decorSpeed: "0.2",
-    decorContainer: "flex flex-col items-center justify-center gap-4 absolute -top-4 right-2",
+    decorClass: "h-60 md:h-200 object-cover",
+    decorSpeedMobile: "0.05",
+    decorSpeedDesktop: "0.2",
+    decorContainer: "flex flex-col items-center justify-center gap-4 absolute -top-2 md:-top-4 right-2",
     title: "Cloud Architecture & Migration",
-    description: "Specializing in AWS cloud migrations, transforming legacy systems into modern, scalable cloud-native applications. Expert in Kubernetes orchestration and Docker containerization for optimal performance."
+    description: "Specializing in AWS migrations and container orchestration with Kubernetes and Docker for scalable cloud solutions."
   },
   {
     id: 3,
-    gridClass: "col-span-3 row-span-4",
+    gridClass: " md:col-span-3 md:row-span-4",
     bgImage: "./images/bento2.png",
     decorImage: "./images/micro.png",
-    decorClass: "h-100 absolute right-0 -bottom-10 object-cover",
-    decorSpeed: "0.1",
+    decorClass: "h-40 md:h-100 absolute right-0 -bottom-5 md:-bottom-10 object-cover",
+    decorSpeedMobile: "0.05",
+    decorSpeedDesktop: "0.1",
     title: "Microservices",
     description: "Building distributed systems with event-driven architecture and microservices patterns for maximum scalability."
   },
   {
     id: 4,
-    gridClass: "col-span-3 row-span-3",
+    gridClass: "md:col-span-3 md:row-span-3",
     bgImage: "./images/sphere1.png",
     decorImage: "./images/db.png",
-    decorClass: "h-112 absolute right-0 -bottom-25 opacity-80 object-cover",
-    decorSpeed: "0.05",
+    decorClass: "h-60 md:h-112 absolute right-0 -bottom-10 md:-bottom-25 opacity-80 object-cover",
+    decorSpeedMobile: "0.05",
+    decorSpeedDesktop: "0.05",
     title: "Database Optimization",
     description: "Creating and executing database patch scripts ensuring data integrity and optimal performance across environments."
   }
 ];
 
 const Expertise = () => {
+  const [isMobile, setIsMobile] = React.useState(false);
+
+  React.useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   return (
-    <div className="min-h-screen w-full pt-40 flex flex-col items-center px-8 overflow-hidden">
+    <div className="min-h-screen w-full pt-20 md:pt-40 flex flex-col items-center px-4 md:px-8 overflow-hidden">
       <H3>[EXPERTISE]</H3>
-      <div className="grid grid-cols-6 grid-rows-7 w-full h-[110vh] gap-5 mt-20">
+      <div className="grid grid-cols-1 md:grid-cols-6 md:grid-rows-7 w-full h-[120vh] md:h-[110vh] gap-3 md:gap-5 mt-10 md:mt-20">
         {expertiseItems.map((item) => (
           <motion.div
             key={item.id}
@@ -77,7 +94,7 @@ const Expertise = () => {
                 <div className={item.decorContainer}>
                   <img 
                     data-scroll 
-                    data-scroll-speed={item.decorSpeed} 
+                    data-scroll-speed={isMobile ? item.decorSpeedMobile : item.decorSpeedDesktop} 
                     className={item.decorClass} 
                     src={item.decorImage}
                     alt=""
@@ -86,7 +103,7 @@ const Expertise = () => {
               ) : (
                 <img 
                   data-scroll 
-                  data-scroll-speed={item.decorSpeed} 
+                  data-scroll-speed={isMobile ? item.decorSpeedMobile : item.decorSpeedDesktop} 
                   className={item.decorClass} 
                   src={item.decorImage}
                   alt=""
@@ -112,11 +129,11 @@ const Expertise = () => {
                 },
               }}
               viewport={{once:true}}
-              className="absolute top-6 left-5">
-                <h3 className="text-2xl text-shadow-lg uppercase relative tracking-normal font-[heading]">
+              className="absolute top-3 md:top-6 left-3 md:left-5">
+                <h3 className="text-lg md:text-2xl text-shadow-lg uppercase relative tracking-normal font-[heading]">
                   {item.title}
                 </h3>
-                <p className="text-black text-lg mt-2 font-[para] max-w-sm">
+                <p className="text-black text-sm md:text-lg mt-1 md:mt-2 font-[para] max-w-xs md:max-w-sm">
                   {item.description}
                 </p>
               </motion.div>
