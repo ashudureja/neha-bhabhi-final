@@ -74,7 +74,7 @@ const Hero = ({ isContentVisible }) => {
 
   return (
  
-     <motion.div style={{y}} ref={containerRef}  className="h-screen rounded-2xl sm:mask-b-from-70% relative w-full relative flex flex-col gap-7 items-center justify-center p-5 bg-cover overflow-hidden  ">
+     <motion.div style={{y}} ref={containerRef}  className="min-h-screen rounded-2xl sm:mask-b-from-70% relative w-full relative flex flex-col gap-7 items-center justify-center p-5 bg-cover overflow-hidden  ">
       {/* <img className="absolute h-full w-full -top-1" src="./images/bg2.png"></img>
       <img className="absolute h-full w-full -top-1" src="./images/bg2.png"></img> */}
       <UnicornBackground/>
