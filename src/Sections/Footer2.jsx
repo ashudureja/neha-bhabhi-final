@@ -22,7 +22,7 @@ const Button = ({index, children, img, imgClassName}) => {
           ease: [0.25, 0.4, 0.25, 1],
         },
       }} 
-      className='px-14 py-3 font-[heading] tracking-wider uppercase shadow-brand text-white bg-black rounded-xl cursor-pointer group overflow-hidden'
+      className='w-40 py-3 font-[heading] tracking-wider uppercase shadow-brand text-white bg-black rounded-xl cursor-pointer group overflow-hidden'
     >
       <div className="relative flex items-center gap-4 justify-center -ml-4">
         <span className="flex relative items-center gap-4 group-hover:translate-x-[160px] group-hover:opacity-0 transition-all duration-300 ease-out">
@@ -50,7 +50,7 @@ const Footer2 = () => {
     <div className='h-screen relative w-full flex items-center justify-center overflow-hidden'>
       <div className='relative z-10'>
         <H1 text="Neha Valecha"/>
-        <div className='flex items-center justify-center gap-4'>
+        <div className='grid grid-cols-2   md:grid-cols-4  mt-4 items-center justify-center gap-4'>
           {buttons.map((btn, index) => (
             <Button key={index} index={index} img={btn.img} imgClassName={btn.imgClassName}>
               {btn.label}
@@ -58,7 +58,10 @@ const Footer2 = () => {
           ))}
         </div>
       </div>
-      <img data-scroll data-scroll-speed="0.3" className='absolute bottom-0 h-160 opacity-90' src="./images/flower.png" alt="decorative flower" />
+      <div className='h-190  md:hidden block   absolute bottom-0 w-full '>
+        <img data-scroll data-scroll-speed="0.3" className=' object-cover w-full  h-full opacity-90' src="./images/flower.png" alt="decorative flower" />
+      </div>
+      <img data-scroll data-scroll-speed="0.3" className=' hidden md:block  h-150 absolute bottom-0 opacity-90' src="./images/flower.png" alt="decorative flower" />
     </div>
   )
 }
