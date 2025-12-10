@@ -4,7 +4,7 @@ import { motion ,useScroll, useTransform } from "motion/react";
 import { MdEmail, MdDownload } from "react-icons/md";
 import UnicornBackground from "./UnicornBackground";
 import { useRef } from "react";
-import H1 from "../Components/H1.JSX";
+import H1 from "../Components/H1";
 
 const blurVariants = {
   initial: {

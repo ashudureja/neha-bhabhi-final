@@ -1,7 +1,8 @@
 import React from 'react'
 import { Instagram, Linkedin, Mail, Github } from 'lucide-react'
-import H1 from '../Components/H1.JSX'
+
 import {motion} from 'motion/react'
+import H1 from "../Components/H1";
 
 const Button = ({index, children, img, imgClassName}) => {
   return (
