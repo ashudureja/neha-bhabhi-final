@@ -75,11 +75,9 @@ const Hero = ({ isContentVisible }) => {
   return (
  
      <motion.div style={{y}} ref={containerRef}  className="min-h-screen rounded-2xl mask-b-from-90% sm:mask-b-from-70% w-full relative flex flex-col gap-7 items-center justify-center p-5 bg-cover overflow-hidden  ">
-      {/* <img className="absolute h-full w-full -top-1" src="./images/bg2.png"></img>
-      <img className="absolute h-full w-full -top-1" src="./images/bg2.png"></img> */}
+     
       <UnicornBackground/>
-     {/* <video className="absolute h-200 bottom-0 -z-0" src="./images/flower.mp4 " autoPlay muted loop></video> */}
-      
+   
       <motion.img
         variants={blurVariants}
         initial="initial"
@@ -108,7 +106,7 @@ const Hero = ({ isContentVisible }) => {
         {/* Neha Valecha */}
       </motion.h1>
       
-      <div className="relative mt-10 sm:mt-0">
+      <div className="relative mt-20">
         <H1 text="Backend Developer"/>
 
         <MySVG />
