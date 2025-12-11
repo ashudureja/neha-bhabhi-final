@@ -59,9 +59,9 @@ const Testimonials2 = () => {
       {/* Background Lines */}
       <div className="hidden sm:flex w-full h-full absolute left-1/2 -translate-x-1/2 gap-2 items-center justify-between">
         <div className="border border-dashed border-transparent h-full w-[1px] -z-0"></div>
-        <div className="border border-dashed border-white/30 h-full w-[1px] -z-0 mask-t-from-98%"></div>
+        <div className="border border-dashed border-white/30 h-full w-[1px] -z-0 mask-t-from-98% mask-b-from-95%"></div>
         <div className="border border-dashed border-transparent h-full w-[1px] -z-0"></div>
-        <div className="border border-dashed border-white/30 h-full w-[1px] -z-0 mask-t-from-98%"></div>
+        <div className="border border-dashed border-white/30 h-full w-[1px] -z-0 mask-t-from-98% mask-b-from-95%"></div>
         <div className="border border-dashed border-transparent h-full w-[1px] -z-0"></div>
       </div>
      
@@ -90,13 +90,13 @@ const Testimonials2 = () => {
                 }} 
                 viewport={{ once: true }}
                 key={index} 
-                className='flex flex-col max-w-xs sm:max-w-md lg:max-w-lg text-center gap-4 sm:gap-5'
+                className='flex flex-col max-w-xs md:max-w-sm lg:max-w-lg text-center gap-4 sm:gap-5'
               >
                 
 
                 <h3 
                   data-testimonial 
-                  className='text-[4.5vw] md:text-[2.2vw] lg:text-2xl leading-5 md:leading-7.5 font-[para] text-gray-300'
+                  className='text-[4.5vw] md:text-[2.5vw] lg:text-2xl leading-5 md:leading-7.5 font-[para] text-gray-300'
                 >
                   {item.text}
                 </h3>
@@ -114,7 +114,7 @@ const Testimonials2 = () => {
                         ease: [0.25, 0.4, 0.25, 1],
                       },
                     }} 
-                    className='text-xl sm:text-2xl lg:text-[26px] text-white font-[signature]'
+                    className='text-xl md:text-[22px] lg:text-2xl lg:text-[26px] text-white font-[signature]'
                   >
                     "{item.name}"
                   </motion.div>
