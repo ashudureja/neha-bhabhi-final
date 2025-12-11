@@ -47,21 +47,23 @@ const Footer2 = () => {
   ]
 
   return (
-    <div className='h-screen relative w-full flex items-center justify-center overflow-hidden'>
-      <div className='relative z-10'>
-        <H1 text="Neha Valecha"/>
-        <div className='grid grid-cols-2   md:grid-cols-4  mt-4 items-center justify-center gap-4'>
+    <div className='h-screen relative w-full flex flex-col items-center justify-center overflow-hidden'>
+  
+       <div className='z-10'>
+         <H1 text="Neha Valecha"/>
+       </div>
+        <div className='grid grid-cols-2  z-10 md:grid-cols-4  mt-4 items-center justify-center gap-4'>
           {buttons.map((btn, index) => (
             <Button key={index} index={index} img={btn.img} imgClassName={btn.imgClassName}>
               {btn.label}
             </Button>
           ))}
         </div>
-      </div>
-      <div className='h-190  md:hidden block   absolute bottom-0 w-full '>
+      
+      <div className='h-[95vh] md:h-250  lg:hidden block    absolute bottom-0 w-full '>
         <img data-scroll data-scroll-speed="0.3" className=' object-cover w-full  h-full opacity-90' src="./images/flower.png" alt="decorative flower" />
       </div>
-      <img data-scroll data-scroll-speed="0.3" className=' hidden md:block  h-150 absolute bottom-0 opacity-90' src="./images/flower.png" alt="decorative flower" />
+      <img data-scroll data-scroll-speed="0.3" className='z- hidden lg:block  h-150 absolute bottom-0 opacity-90' src="./images/flower.png" alt="decorative flower" />
     </div>
   )
 }

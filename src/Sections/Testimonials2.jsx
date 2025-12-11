@@ -59,9 +59,9 @@ const Testimonials2 = () => {
       {/* Background Lines */}
       <div className="hidden sm:flex w-full h-full absolute left-1/2 -translate-x-1/2 gap-2 items-center justify-between">
         <div className="border border-dashed border-transparent h-full w-[1px] -z-0"></div>
-        <div className="border border-dashed border-white/30 h-full w-[1px] -z-0 mask-t-from-98% mask-b-from-95%"></div>
+        <div className="border border-dashed border-white/30 h-full w-[1px] -z-0 mask-t-from-98% mask-b-from-95% md:-ml-18 lg:ml-0"></div>
         <div className="border border-dashed border-transparent h-full w-[1px] -z-0"></div>
-        <div className="border border-dashed border-white/30 h-full w-[1px] -z-0 mask-t-from-98% mask-b-from-95%"></div>
+        <div className="border border-dashed border-white/30 h-full w-[1px] -z-0 mask-t-from-98% mask-b-from-95% md:-mr-18 lg:mr-0"></div>
         <div className="border border-dashed border-transparent h-full w-[1px] -z-0"></div>
       </div>
      
@@ -79,7 +79,7 @@ const Testimonials2 = () => {
            {testimonials.map((item, index) => {
             return (
               <motion.div  
-                initial={{ opacity: 0, filter: "blur(50px)" }} 
+                initial={{ opacity: 0, filter: "blur(100px)" }} 
                 whileInView={{
                   opacity: 1,
                   filter: "blur(0px)",
@@ -96,7 +96,7 @@ const Testimonials2 = () => {
 
                 <h3 
                   data-testimonial 
-                  className='text-[4.5vw] md:text-[2.5vw] lg:text-2xl leading-5 md:leading-7.5 font-[para] text-gray-300'
+                  className='text-[4.5vw] md:text-[2.5vw] lg:text-2xl leading-5  md:leading-5.5 lg:leading-7.5 font-[para] text-gray-300'
                 >
                   {item.text}
                 </h3>
