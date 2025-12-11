@@ -9,7 +9,7 @@ const expertiseItems = [
     gridClass: "md:col-span-3 md:row-span-3",
     bgImage: "./images/sphere1.png",
     decorImage: "./images/api.png",
-    decorClass: "h-60 md:h-100 absolute right-0 -bottom-5 md:-bottom-10 object-cover",
+    decorClass: "h-80 md:h-120 lg:h-100 absolute right-0 -bottom-5 md:-bottom-10 object-cover",
     decorSpeedMobile: "0.05",
     decorSpeedDesktop: "0.03",
     title: "API Development",
@@ -20,10 +20,10 @@ const expertiseItems = [
     gridClass: " md:col-span-3 md:row-span-4",
     bgImage: "./images/bento.png",
     decorImage: "./images/cloudbn.png",
-    decorClass: "h-60 md:h-200 object-cover",
+    decorClass: "h-85 md:h-150  lg:h-180 object-cover",
     decorSpeedMobile: "0.03",
     decorSpeedDesktop: "0.2",
-    decorContainer: "flex flex-col items-center justify-center gap-4 absolute  md:-top-4 right-2",
+    decorContainer: "flex flex-col items-center justify-center gap-4 absolute -bottom-15 lg:-top-4 right-2",
     title: "Cloud Architecture & Migration",
     description: "Specializing in AWS migrations and container orchestration with Kubernetes and Docker for scalable cloud solutions."
   },
@@ -32,7 +32,7 @@ const expertiseItems = [
     gridClass: " md:col-span-3 md:row-span-4",
     bgImage: "./images/bento2.png",
     decorImage: "./images/micro.png",
-    decorClass: "h-40 md:h-100 absolute right-0 -bottom-5 md:-bottom-10 object-cover",
+    decorClass: "h-60 md:h-100 absolute right-0 -bottom-5 lg:-bottom-10 object-cover",
     decorSpeedMobile: "0.05",
     decorSpeedDesktop: "0.1",
     title: "Microservices",
@@ -43,7 +43,7 @@ const expertiseItems = [
     gridClass: "md:col-span-3 md:row-span-3",
     bgImage: "./images/sphere1.png",
     decorImage: "./images/db.png",
-    decorClass: "h-60 md:h-112 absolute right-0 -bottom-10 md:-bottom-25 opacity-80 object-cover",
+    decorClass: "h-80 md:h-112 absolute right-0 -bottom-20 lg:-bottom-25 opacity-80 object-cover",
     decorSpeedMobile: "0.05",
     decorSpeedDesktop: "0.05",
     title: "Database Optimization",
@@ -56,7 +56,7 @@ const Expertise = () => {
 
   React.useEffect(() => {
     const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768);
+      setIsMobile(window.innerWidth < 1000);
     };
     
     checkMobile();
@@ -66,9 +66,9 @@ const Expertise = () => {
   }, []);
 
   return (
-    <div className="min-h-screen w-full pt-20 pb-2 md:pt-40 flex flex-col items-center px-4 md:px-8 overflow-hidden">
+    <div className="min-h-screen w-full pt-25 pb-2 md:pt-40 flex flex-col items-center px-4 md:px-5 lg:px-8 overflow-hidden">
       <H3>[EXPERTISE]</H3>
-      <div className="grid grid-cols-1 md:grid-cols-6 md:grid-rows-7 w-full  md:h-[110vh] gap-3 md:gap-5 mt-15 md:mt-20">
+      <div className="grid grid-cols-1 md:grid-cols-6 md:grid-rows-7 w-full md:h-[100vh] lg:h-[110vh] gap-3 md:gap-5 mt-15 md:mt-20">
         {expertiseItems.map((item) => (
           <motion.div
             key={item.id}
@@ -76,7 +76,7 @@ const Expertise = () => {
             whileInView={{ y: 1 }}
             transition={{ duration: 1, ease: circOut }}
             viewport={{ once: true }}
-            className={`${item.gridClass} shadow-[0_3px_10px_rgb(0,0,0,0.2)] h-65 md:h-full  overflow-hidden bg-gray-200 backdrop-blur-3xl rounded-xl p-2`}
+            className={`${item.gridClass} shadow-[0_3px_10px_rgb(0,0,0,0.2)] h-75 md:h-full  overflow-hidden bg-gray-200 backdrop-blur-3xl rounded-xl p-2`}
           >
             <motion.div
               initial={{ scale: 1.3 }}
@@ -130,10 +130,10 @@ const Expertise = () => {
               }}
               viewport={{once:true}}
               className="absolute top-3 md:top-6 left-3 md:left-5">
-                <h3 className="text-lg md:text-2xl text-shadow-lg uppercase relative tracking-normal font-[heading]">
+                <h3 className="text-[5cqw] md:text-[3cqw]  lg:text-[25px] 2xl:text-3xl text-shadow-lg uppercase relative tracking-normal font-[heading]">
                   {item.title}
                 </h3>
-                <p className="text-black text-sm  md:text-lg mt-1 md:mt-2 font-[para] max-w-[70vw] md:max-w-sm">
+                <p className="text-black text-[3.5cqw] md:text-[2.2vw] lg:text-xl 2xl:text-[22px] mt-1 md:mt-2 font-[para] max-w-[70cqw] md:max-w-sm">
                   {item.description}
                 </p>
               </motion.div>

@@ -2,7 +2,7 @@ import React from 'react';
 
 export const LeftLine = () => {
   return (
-     <div className="sm:flex flex-col gap-0 min-w-[6rem] hidden">
+     <div className="lg:flex flex-col gap-0 min-w-[6rem] hidden">
           
             <div 
               className="w-full h-[7.5rem] border-r border-t border-[#cdcddd] rounded-tr-[1.5rem]"
@@ -26,7 +26,7 @@ export const LeftLine = () => {
 
 export const RightLine=()=>{
   return (
-     <div className="sm:flex hidden flex-col gap-0 min-w-[6rem] scale-x-[-1]">
+     <div className="lg:flex hidden flex-col gap-0 min-w-[6rem] scale-x-[-1]">
           
             <div 
               className="w-full h-[7.5rem] border-r border-t border-[#cdcddd] rounded-tr-[1.5rem]"

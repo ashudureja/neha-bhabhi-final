@@ -13,7 +13,7 @@ const About = () => {
 
    
   return (
-    <div className=' w-full flex flex-col items-center pt-25 sm:pt-40  overflow-hidden'>
+    <div className=' w-full flex flex-col items-center pt-10 sm:pt-40  overflow-hidden'>
       
         <H3>[ABOUT ME]</H3>
 

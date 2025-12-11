@@ -13,7 +13,7 @@ const AnimatedPara = ({ para }) => {
   return (
     <p
       ref={container}
-      className="text-[4.5vw] sm:text-[1.8vw] text-black/80 font-[para] max-w-xs sm:max-w-xl text-center  flex-wrap flex  gap-1 items-center justify-center"
+      className="text-[4.5cqw] md:text-[3cqw] lg:text-[1.8cqw] text-black/80 font-[para] max-w-xs sm:max-w-xl text-center  flex-wrap flex  gap-1 items-center justify-center"
     >
       {words.map((word, i) => {
         const start = i / words.length;
@@ -39,7 +39,7 @@ const Word = ({ children, progress, range }) => {
     <span className="relative ">
       <span className="absolute opacity-20">{children}</span>
       <motion.span
-        className="text-shadow-lg"
+        className="text-shadow-sm"
         style={{
           opacity,
           filter,

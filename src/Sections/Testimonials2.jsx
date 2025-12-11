@@ -17,7 +17,7 @@ const Testimonials2 = () => {
     offset: ["start end", "start start"]
   });
   
-  const y = useTransform(scrollYProgress, [0, 1], [200, 0]);
+  const y = useTransform(scrollYProgress, [0, 1], [50, 0]);
   const scale = useTransform(scrollYProgress, [0, 1], [0.7, 1]);
 
   useEffect(() => {
@@ -30,7 +30,7 @@ const Testimonials2 = () => {
       start: "top bottom",
       end: "bottom top",
       onUpdate: (self) => {
-        if (self.progress >= 0.75) {
+        if (self.progress >= 0.8) {
           gsap.set(element, { backgroundColor: "#eaeaea" });
           gsap.set(element.querySelectorAll('[data-text]'), { color: "#000000" });
           gsap.set(element.querySelectorAll('[data-comma]'), { color: "#000000" });
@@ -71,11 +71,11 @@ const Testimonials2 = () => {
         <div className='relative  w-full h-full p-px'>
           
            <div className='sticky z-1 top-60 left-0  flex justify-between'>
-             <SiComma className='text-xl md:text-2xl lg:text-4xl text-amber-300 scale-y-[-1] scale-x-[-1]' />
-             <SiComma className='   text-xl md:text-2xl lg:text-4xl text-amber-300 ' />
+             <SiComma className='text-xl md:text-2xl lg:text-5xl text-amber-300 scale-y-[-1] scale-x-[-1]' />
+             <SiComma className='   text-xl md:text-2xl lg:text-5xl text-amber-300 ' />
            </div>
          
-          <div className='flex flex-col items-center justify-center gap-10'>
+          <div className='flex flex-col items-center justify-center  gap-13 md:gap-20'>
            {testimonials.map((item, index) => {
             return (
               <motion.div  

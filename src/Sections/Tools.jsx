@@ -91,7 +91,7 @@ null,
  
 
   return (
-    <section className="relative w-full  flex flex-col items-center  ">
+    <section className="relative w-full   flex flex-col items-center   ">
      
       
 
@@ -100,9 +100,9 @@ null,
         
         
         <div 
-          className="w-full h-full flex flex-col p-2 sm:p-4 items-center justify-center mask-l-from-70% mask-r-from-70% mask-b-from-80% "
+          className="w-full h-full flex flex-col p-2 sm:p-4 items-center justify-center mask-l-from-70% mask-r-from-70% mask-b-from-70% "
           style={{
-            // Adjust rotation here if you want more/less tilt - reduced on mobile
+           
             transform: window.innerWidth < 640 
               ? 'perspective(800px) rotateX(8deg) rotateZ(-15deg) skewY(6deg)' 
               : 'perspective(1000px) rotateX(10deg) rotateZ(-20deg) skewY(8deg)',

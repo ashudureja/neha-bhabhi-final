@@ -4,6 +4,7 @@ import { motion ,useScroll, useTransform } from "motion/react";
 import { MdEmail, MdDownload } from "react-icons/md";
 import UnicornBackground from "./UnicornBackground";
 import { useRef } from "react";
+
 import H1 from "../Components/H1";
 
 const blurVariants = {
@@ -74,7 +75,7 @@ const Hero = ({ isContentVisible }) => {
 
   return (
  
-     <motion.div style={{y}} ref={containerRef}  className="min-h-screen rounded-2xl mask-b-from-90% sm:mask-b-from-70% w-full relative flex flex-col gap-7 items-center justify-center p-5 bg-cover overflow-hidden  ">
+     <motion.div style={{y}} ref={containerRef}  className="min-h-screen  mask-b-from-90% lg:mask-b-from-80% w-full relative flex flex-col gap-7 items-center justify-center p-5 bg-cover overflow-hidden  ">
      
       <UnicornBackground/>
    
@@ -122,7 +123,7 @@ const Hero = ({ isContentVisible }) => {
         </motion.p>
       </div>
 
-      <div className=" text-sm sm:text-[20px] pointer-events-none w-full max-w-5xl text-center sm:-mt-10 font-[para] flex flex-wrap justify-center gap-x-1">
+      <div className=" text-[clamp(12px,2vw,22px)] pointer-events-none w-full max-w-6xl text-center md:-mt-5 lg:-mt-10 font-[para] flex flex-wrap justify-center gap-x-1">
         {paraWord.map((word, index) => (
           <motion.span
             initial={{ opacity: 0, rotate: 2, filter: "blur(10px)" }}
