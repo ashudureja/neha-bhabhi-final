@@ -68,7 +68,7 @@ const AwardCard = ({ award, index }) => {
 
   const opacity = useTransform(scrollYProgress, [0, 0.3, 0.7, 1], [0, 1, 1, 0]);
   const y = useTransform(scrollYProgress, [0, 1], [100, 0]);
-  const scale = useTransform(scrollYProgress, [0, 0.3, 0.5, 1], [0.9, 1, 1, 0.9]);
+  const scale = useTransform(scrollYProgress, [0, 0.3, 0.5, 1], [0.9, 1, 1, 0.8]);
 
   return (
     // <motion.div
