@@ -17,8 +17,8 @@ const Testimonials2 = () => {
     offset: ["start end", "start start"]
   });
   
-  const y = useTransform(scrollYProgress, [0, 1], [50, 0]);
-  const scale = useTransform(scrollYProgress, [0, 1], [0.7, 1]);
+  const y = useTransform(scrollYProgress, [0, 1], [1, 0]);
+  const scale = useTransform(scrollYProgress, [0, 1], [0.7, 1.006]);
 
   useEffect(() => {
     const element = containerRef.current;
@@ -59,16 +59,16 @@ const Testimonials2 = () => {
       {/* Background Lines */}
       <div className="hidden sm:flex w-full h-full absolute left-1/2 -translate-x-1/2 gap-2 items-center justify-between">
         <div className="border border-dashed border-transparent h-full w-[1px] -z-0"></div>
-        <div className="border border-dashed border-white/30 h-full w-[1px] -z-0"></div>
+        <div className="border border-dashed border-white/30 h-full w-[1px] -z-0 mask-t-from-98%"></div>
         <div className="border border-dashed border-transparent h-full w-[1px] -z-0"></div>
-        <div className="border border-dashed border-white/30 h-full w-[1px] -z-0"></div>
+        <div className="border border-dashed border-white/30 h-full w-[1px] -z-0 mask-t-from-98%"></div>
         <div className="border border-dashed border-transparent h-full w-[1px] -z-0"></div>
       </div>
      
       <H3 color='white'>[TESTIMONIALS]</H3>
       
      
-        <div className='relative  w-full h-full p-px'>
+        <div className='relative  w-full h-full '>
           
            <div className='sticky z-1 top-60 left-0  flex justify-between'>
              <SiComma className='text-xl md:text-2xl lg:text-5xl text-amber-300 scale-y-[-1] scale-x-[-1]' />
@@ -96,7 +96,7 @@ const Testimonials2 = () => {
 
                 <h3 
                   data-testimonial 
-                  className='text-lg sm:text-xl lg:text-2xl font-[para] text-gray-300'
+                  className='text-[4.5vw] md:text-[2.2vw] lg:text-2xl leading-5 md:leading-7.5 font-[para] text-gray-300'
                 >
                   {item.text}
                 </h3>
@@ -118,7 +118,7 @@ const Testimonials2 = () => {
                   >
                     "{item.name}"
                   </motion.div>
-                  <p className='text-xs sm:text-sm font-[heading] uppercase text-amber-300'>
+                  <p className='text-xs sm:text-sm font-[heading]  uppercase text-amber-300'>
                     {item.role}
                   </p>
                 </div>

@@ -40,7 +40,7 @@ const App = () => {
   return (
   
   <div className="bg-wht relative">
-  <div className="max-w-8xl mx-auto border border-l-white/50 border-r-white/50 border-dashed">
+  <div className="max-w-8xl mx-auto  border-l-white/50 border-r-white/50 border-dashed">
     {/* Background lines - positioned relative to max-w container */}
     <div className="flex w-full h-full absolute left-1/2 -translate-x-1/2 gap-2 items-center justify-between">
       <div className="border border-dashed border-white/50 h-full w-[1px] -z-0 mask-t-from-50%"></div>

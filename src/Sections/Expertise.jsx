@@ -22,8 +22,8 @@ const expertiseItems = [
     decorImage: "./images/cloudbn.png",
     decorClass: "h-85 md:h-150  lg:h-180 object-cover",
     decorSpeedMobile: "0.03",
-    decorSpeedDesktop: "0.2",
-    decorContainer: "flex flex-col items-center justify-center gap-4 absolute -bottom-15 lg:-top-4 right-2",
+    decorSpeedDesktop: "0.15",
+    decorContainer: "flex flex-col items-center justify-center gap-4 absolute -bottom-15 lg:-top-18 right-2",
     title: "Cloud Architecture & Migration",
     description: "Specializing in AWS migrations and container orchestration with Kubernetes and Docker for scalable cloud solutions."
   },
@@ -130,10 +130,10 @@ const Expertise = () => {
               }}
               viewport={{once:true}}
               className="absolute top-3 md:top-6 left-3 md:left-5">
-                <h3 className="text-[5cqw] md:text-[3cqw]  lg:text-[25px] 2xl:text-3xl text-shadow-lg uppercase relative tracking-normal font-[heading]">
+                <h3 className="text-[5.3vw] md:text-[3cqw]  lg:text-[25px] 2xl:text-3xl text-shadow-lg uppercase relative tracking-normal font-[heading]">
                   {item.title}
                 </h3>
-                <p className="text-black text-[3.5cqw] md:text-[2.2vw] lg:text-xl 2xl:text-[22px] mt-1 md:mt-2 font-[para] max-w-[70cqw] md:max-w-sm">
+                <p className="text-black text-[4vw] leading-5 md:leading-7.5 md:text-[2.2vw] lg:text-xl 2xl:text-[22px] mt-1 md:mt-2 font-[para] max-w-[70cqw] md:max-w-sm">
                   {item.description}
                 </p>
               </motion.div>
