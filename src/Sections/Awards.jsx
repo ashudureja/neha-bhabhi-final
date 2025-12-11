@@ -96,7 +96,7 @@ const AwardCard = ({ award, index }) => {
     //   animate={{ opacity: 1, y: 0 }}
     //   transition={{ delay: index * 0.1, duration: 0.5 }}
         
-        className="w-90 h-110 relative bg-gradient-to-b from-transparent via-yellow-50 to-yellow-400  overflow-hidden rounded-3xl  p-6 border border-[#e0e0eb] flex flex-col shadow-[0_4px_6px_-2px_rgb(151_151_185)]"
+        className="w-90 md:h-110 relative bg-gradient-to-b from-transparent via-yellow-50 to-yellow-400  overflow-hidden rounded-3xl  p-6 border border-[#e0e0eb] flex flex-col shadow-[0_4px_6px_-2px_rgb(151_151_185)]"
       >
         {/* <div className="inset-0 bg-[url('./images/bento.png')] bg-cover absolute opacity-70" ></div> */}
         
@@ -107,7 +107,7 @@ const AwardCard = ({ award, index }) => {
  
          
           
-          <h4 className="text-2xl font-[heading] mt-4 text-black text-shadow-lg  text-center">
+          <h4 className="text-[5.5vw] md:text-[3vw]  lg:text-[25px] 2xl:text-3xl font-[heading] mt-4 text-black text-shadow-lg  text-center">
             {award.title}
           </h4>
           
@@ -115,9 +115,9 @@ const AwardCard = ({ award, index }) => {
             {award.company}
           </p>
 
-            <img className='size-45' src={award.url}></img>
+            <img className=' size-35 md:size-45' src={award.url}></img>
           
-          <div className="mt-auto w-full">
+          <div className="mt-5 md:mt-auto w-full">
             <div className=" w-full font-[heading]  text-center shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)] bg-blk tracking-wider text-white tracking-wide text-sm px-3 py-2 rounded-full">
               {award.period}
             </div>

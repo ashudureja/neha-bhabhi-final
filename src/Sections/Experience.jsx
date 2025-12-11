@@ -55,8 +55,8 @@ const ExperienceCard = ({ exp, index }) => {
             {exp.period}
           </div>
           
-          <h4 className="text-[5cqw] md:text-[3cqw]  lg:text-[25px] 2xl:text-3xl font-[heading] text-black text-shadow-lg mb-1">{exp.title}</h4>
-          <p className="text-[4.6cqw] md:text-[2.7cqw]  lg:text-[22px] 2xl:text-2xl font-[heading] text-black text-shadow-lg mb-3">{exp.company}</p>
+          <h4 className="text-[5.3vw] md:text-[3vw]  lg:text-[25px] 2xl:text-3xl font-[heading] text-black text-shadow-lg mb-1">{exp.title}</h4>
+          <p className="text-[4.6vw] md:text-[2.7vw]  lg:text-[22px] 2xl:text-2xl font-[heading] text-black text-shadow-lg mb-3">{exp.company}</p>
           
           <ul className="space-y-2 font-[para] text-[3.7vw] md:text-[2.2vw] lg:text-xl 2xl:text-[22px] text-black">
             {exp.points.map((point, i) => (
