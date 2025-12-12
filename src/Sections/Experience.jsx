@@ -121,7 +121,7 @@ const Experience = () => {
   ]
 
   return (
-    <div className='min-h-screen w-full flex flex-col items-center justify-center py-20 pt-40 px-4 md:px-5 lg:px-8 overflow-hidden '>
+    <div className='min-h-screen w-full flex flex-col items-center justify-center  pt-30 pb-10 md:pt-40 md:pb-20 px-4 md:px-5 lg:px-8 overflow-hidden '>
       {/* <div className='max-w-8xl  '> */}
        
      <H3>[EXPERIENCE]</H3>

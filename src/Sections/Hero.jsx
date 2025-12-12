@@ -6,6 +6,9 @@ import UnicornBackground from "./UnicornBackground";
 import { useRef } from "react";
 
 import H1 from "../Components/H1";
+import Button from "../Components/Button";
+import Download from "../LottieAnimation/Download";
+import Contact from "../LottieAnimation/Contact";
 
 const blurVariants = {
   initial: {
@@ -146,9 +149,9 @@ const Hero = ({ isContentVisible }) => {
         ))}
       </div>
 
-      <div className="flex gap-8">
+      <div className="flex gap-4 md:gap-8">
         <motion.button
-          initial={{ y: 50, scale: 1.1, opacity: 0, filter: "blur(10px)" }}
+          initial={{ y: 50, scale: 1.1, opacity: 0, filter: "blur(20px)" }}
           whileInView={{
             y: 0,
             filter: "blur(0px)",
@@ -180,19 +183,21 @@ const Hero = ({ isContentVisible }) => {
             },
           }}
            viewport={{ once: true }}
-          className="px-6 py-4 font-[heading] tracking-wide bg-black shadow-brand text-white rounded-xl cursor-pointer flex items-center gap-3"
+          className="px-5 py-2.5 md:py-3 font-[heading] tracking-wide bg-black shadow-brand text-white rounded-xl uppercase cursor-pointer flex items-center justify-center gap-3"
         >
          <motion.div
   
       className="inline-block"
     >
-      <MdEmail className="text-2xl" />
+      {/* <MdEmail className="text-2xl" /> */}
+      <img className="h-5" src="https://media.tenor.com/ju4PztDv8WcAAAAj/firstrequestrecords-first-request.gif"></img>
+      {/* <Contact/> */}
     </motion.div>
           Contact Me
         </motion.button>
 
         <motion.button
-          initial={{ y: 50, scale: 1.1, opacity: 0, filter: "blur(10px)" }}
+          initial={{ y: 50, scale: 1.1, opacity: 0, filter: "blur(20px)" }}
           whileInView={{
             y: 0,
             filter: "blur(0px)",
@@ -224,11 +229,18 @@ const Hero = ({ isContentVisible }) => {
             },
           }}
            viewport={{ once: true }}
-          className="px-7 py-4 font-[heading] tracking-wide  bg-white rounded-xl cursor-pointer flex items-center gap-3"
+          className=" px-6 shadow-brand py-2.5 md:py-3 uppercase font-[heading] tracking-wide   bg-black  text-white rounded-xl cursor-pointer flex items-center justify-center gap-1"
         >
-          <MdDownload className="text-2xl" />
-          Resume
+         
+        <div className="-ml-1">
+           <Download/>
+        </div>
+       
+          <span>Resume</span>
+           
         </motion.button>
+
+       
       </div>
     </motion.div>
 
