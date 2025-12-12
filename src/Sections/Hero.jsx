@@ -183,7 +183,7 @@ const Hero = ({ isContentVisible }) => {
             },
           }}
            viewport={{ once: true }}
-          className="px-5 py-2.5 text-xs md:py-3 font-[heading] tracking-wide bg-black shadow-brand text-white rounded-xl uppercase cursor-pointer flex items-center justify-center gap-3"
+          className="px-5 py-2.5 text-xs md:text-sm md:py-3 font-[heading] tracking-wide bg-black shadow-brand text-white rounded-xl uppercase cursor-pointer flex items-center justify-center gap-3"
         >
          <motion.div
   
@@ -229,7 +229,7 @@ const Hero = ({ isContentVisible }) => {
             },
           }}
            viewport={{ once: true }}
-          className=" px-6 shadow-brand py-2.5 md:py-3 uppercase font-[heading] tracking-wide  text-xs  bg-black  text-white rounded-xl cursor-pointer flex items-center justify-center gap-1"
+          className=" px-6 shadow-brand py-2.5 md:py-3 uppercase font-[heading] tracking-wide  text-xs  md:text-sm bg-black  text-white rounded-xl cursor-pointer flex items-center justify-center gap-1"
         >
          
         <div className="-ml-1">

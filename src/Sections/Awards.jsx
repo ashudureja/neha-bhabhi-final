@@ -2,6 +2,15 @@ import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Award } from 'lucide-react';
 import H3 from '../Components/H3';
+import Trophy1 from '../LottieAnimation/Trophy1';
+import Trophy2 from '../LottieAnimation/Trophy2';
+import Trophy3 from '../LottieAnimation/Trophy3';
+import Trophy4 from '../LottieAnimation/Trophy4';
+import Trophy5 from '../LottieAnimation/Trophy5';
+import Trophy6 from '../LottieAnimation/Trophy6';
+import Trophy7 from '../LottieAnimation/Trophy7';
+import Trophy8 from '../LottieAnimation/Trophy8';
+import Trophy9 from '../LottieAnimation/Trophy9';
 
 
 // import { RightLine } from './Line';
@@ -13,31 +22,33 @@ const Awards = () => {
       title: "Making IT Real Award",
       company: "Fidelity International",
       period: "2021-2022",
-      url:"./images/trophy42.gif"
+      comp:<Trophy9  classname="h-80 w-80"/>
     },
     {
       title: "Bi-Annual Award",
       company: "Fidelity International",
       period: "2020-2021",
-       url:"./images/trophy11.gif"
+       comp:<Trophy1/>
     },
     {
       title: "On The Spot Award",
       company: "Fidelity International",
       period: "2018-2021",
-       url:"./images/trophy62.gif"
+       comp:<Trophy3/>
     },
     {
       title: "1st Runner Up",
       company: "Nasscom WSC",
       period: "2015-2016",
-       url:"./images/trophy94.gif"
+      //  url:"./images/trophy94.gif"
+       comp:<Trophy8/>
     },
     {
       title: "Global Finalist",
       company: "Microsoft Apps Challenge",
       period: "2014-2015",
-       url:"./images/trophy72.gif"
+      //  url:"./images/trophy72.gif"
+       comp:<Trophy5/>
     }
   ];
 
@@ -115,7 +126,7 @@ const AwardCard = ({ award, index }) => {
             {award.company}
           </p>
 
-            <img className=' size-35 md:size-45' src={award.url}></img>
+           {award.comp}
           
           <div className="mt-5 md:mt-auto w-full">
             <div className=" w-full font-[heading]  text-center shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)] bg-blk tracking-wider text-white tracking-wide text-sm px-3 py-2 rounded-full">
