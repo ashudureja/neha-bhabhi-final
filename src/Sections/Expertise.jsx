@@ -22,8 +22,8 @@ const expertiseItems = [
     decorImage: "./images/cloudbn.png",
     decorClass: "h-85 md:h-150  lg:h-180 object-cover",
     decorSpeedMobile: "0.03",
-    decorSpeedDesktop: "0.15",
-    decorContainer: "flex flex-col items-center justify-center gap-4 absolute -bottom-15 lg:-top-18 right-2",
+    decorSpeedDesktop: "0.12",
+    decorContainer: "flex flex-col items-center justify-center gap-4 absolute -bottom-15 lg:-top-20 right-2",
     title: "Cloud Architecture & Migration",
     description: "Specializing in AWS migrations and container orchestration with Kubernetes and Docker for scalable cloud solutions."
   },
@@ -133,7 +133,7 @@ const Expertise = () => {
                 <h3 className="text-[5.3vw] md:text-[3vw]  lg:text-[25px] 2xl:text-3xl text-shadow-lg uppercase relative tracking-normal font-[heading]">
                   {item.title}
                 </h3>
-                <p className="text-black text-[4vw] leading-5 md:leading-5.5 lg:leading-7.5 md:text-[2.2vw] lg:text-xl 2xl:text-[22px] mt-1 md:mt-2 font-[para] max-w-[70vw] md:max-w-[40vw] lg:max-w-sm">
+                <p className="text-black text-[3.7vw] leading-5 md:leading-5.5 lg:leading-6.5 md:text-[2.2vw] lg:text-[19px] 2xl:text-[22px] mt-1 md:mt-2 font-[para] max-w-[70vw] md:max-w-[40vw] lg:max-w-sm">
                   {item.description}
                 </p>
               </motion.div>

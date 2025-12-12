@@ -39,7 +39,7 @@ const App = () => {
 
   return (
   
-  <div className="bg-wht relative">
+  <div className="bg-wht relative ">
   <div className="max-w-8xl mx-auto  border-l-white/50 border-r-white/50 border-dashed">
     {/* Background lines - positioned relative to max-w container */}
     <div className="flex w-full h-full absolute left-1/2 -translate-x-1/2 gap-2 items-center justify-between">
@@ -52,14 +52,18 @@ const App = () => {
 
     <AnimatePresence>{isLoading && <Loader />}</AnimatePresence>
     
-    <Navbar />
+  
+     <Navbar />
     <Hero />
     <About />
     <Expertise />
     <Experience />
+   
     <Testimonials2 />
+    
     <Awards />
     <Footer2 />
+    
   </div>
 </div>
     

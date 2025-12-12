@@ -18,7 +18,7 @@ const Testimonials2 = () => {
   });
   
   const y = useTransform(scrollYProgress, [0, 1], [1, 0]);
-  const scale = useTransform(scrollYProgress, [0, 1], [0.7, 1.006]);
+  const scale = useTransform(scrollYProgress, [0, 1], [0.7, 1]);
 
   useEffect(() => {
     const element = containerRef.current;
@@ -30,7 +30,7 @@ const Testimonials2 = () => {
       start: "top bottom",
       end: "bottom top",
       onUpdate: (self) => {
-        if (self.progress >= 0.7) {
+        if (self.progress >= 0.73) {
           gsap.set(element, { backgroundColor: "#eaeaea" });
           gsap.set(element.querySelectorAll('[data-text]'), { color: "#000000" });
           gsap.set(element.querySelectorAll('[data-comma]'), { color: "#000000" });
@@ -53,7 +53,7 @@ const Testimonials2 = () => {
     <motion.div 
       style={{ y, scale }} 
       ref={containerRef} 
-      className='min-h-screen bg-black relative z-10 rounded-tl-[40px] sm:rounded-tl-[80px] lg:rounded-tl-[120px] rounded-tr-[40px] sm:rounded-tr-[80px] lg:rounded-tr-[120px] w-full py-20 sm:p-12 md:p-20 lg:p-32 xl:p-40 flex flex-col gap-10 sm:gap-16 lg:gap-20'
+      className='min-h-screen  bg-black relative z-10 rounded-tl-[40px] sm:rounded-tl-[80px] lg:rounded-tl-[120px] rounded-tr-[40px] sm:rounded-tr-[80px] lg:rounded-tr-[120px] w-full py-20 sm:p-12 md:p-20 lg:p-32 xl:p-40 flex flex-col gap-10 sm:gap-16 lg:gap-20'
     >
 
       {/* Background Lines */}

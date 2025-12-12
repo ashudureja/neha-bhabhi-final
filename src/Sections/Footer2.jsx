@@ -61,9 +61,9 @@ const Footer2 = () => {
         </div>
       
       <div className='h-[95vh] md:h-250  lg:hidden block    absolute bottom-0 w-full '>
-        <img data-scroll data-scroll-speed="0.3" className=' object-cover w-full  h-full opacity-90' src="./images/flower.png" alt="decorative flower" />
+        <img data-scroll data-scroll-speed="0.3" className=' object-cover w-full  h-full opacity-80' src="./images/flower.png" alt="decorative flower" />
       </div>
-      <img data-scroll data-scroll-speed="0.3" className='z- hidden lg:block  h-150 absolute bottom-0 opacity-90' src="./images/flower.png" alt="decorative flower" />
+      <img data-scroll data-scroll-speed="0.3" className='z- hidden lg:block  h-full absolute -bottom-20 opacity-80' src="./images/flower.png" alt="decorative flower" />
     </div>
   )
 }

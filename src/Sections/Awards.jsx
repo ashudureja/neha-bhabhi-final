@@ -42,7 +42,7 @@ const Awards = () => {
   ];
 
   return (
-    <div className="min-h-screen mt-40 px-4">
+    <div className="min-h-screen mt-40 px-4 ">
       
        <H3>[ACHIEVMENTS]</H3>
       <div className='flex justify-between    h-full w-full'>

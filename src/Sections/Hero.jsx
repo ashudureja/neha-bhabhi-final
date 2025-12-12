@@ -85,7 +85,7 @@ const Hero = ({ isContentVisible }) => {
         whileInView="animate"
         transition={blurVariants.transition}
         className="h-30 absolute top-35 right-30 hidden sm:block"
-        src="./images/stars3.png"
+        src="./images/stars5.png"
       />
 
       <motion.img
@@ -94,7 +94,7 @@ const Hero = ({ isContentVisible }) => {
         whileInView="animate"
         transition={blurVariants.transition}
         className="h-20 absolute bottom-35 left-30 hidden sm:block" 
-        src="./images/stars3.png"
+        src="./images/stars5.png"
       />
 
       <motion.h1
@@ -123,7 +123,7 @@ const Hero = ({ isContentVisible }) => {
         </motion.p>
       </div>
 
-      <div className=" text-[clamp(12px,2vw,22px)] pointer-events-none w-full max-w-6xl text-center md:-mt-5 lg:-mt-10 font-[para] flex flex-wrap justify-center gap-x-1">
+      <div className=" text-[clamp(12px,2vw,22px)] leading-6 md:leading-7 pointer-events-none w-full md:max-w-5xl lg:max-w-6xl text-center md:-mt-5 lg:-mt-10 font-[para] flex flex-wrap justify-center gap-x-1">
         {paraWord.map((word, index) => (
           <motion.span
             initial={{ opacity: 0, rotate: 2, filter: "blur(10px)" }}
