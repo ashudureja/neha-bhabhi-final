@@ -149,9 +149,9 @@ const Hero = ({ isContentVisible }) => {
         ))}
       </div>
 
-      <div className="flex gap-4 md:gap-8">
+      <div className="flex gap-6 md:gap-8">
         <motion.button
-          initial={{ y: 50, scale: 1.1, opacity: 0, filter: "blur(20px)" }}
+          initial={{ y: 50, scale:window.innerWidth<640?1.05:1.1, opacity: 0, filter: "blur(20px)" }}
           whileInView={{
             y: 0,
             filter: "blur(0px)",
@@ -183,7 +183,7 @@ const Hero = ({ isContentVisible }) => {
             },
           }}
            viewport={{ once: true }}
-          className="px-5 py-2.5 md:py-3 font-[heading] tracking-wide bg-black shadow-brand text-white rounded-xl uppercase cursor-pointer flex items-center justify-center gap-3"
+          className="px-5 py-2.5 text-xs md:py-3 font-[heading] tracking-wide bg-black shadow-brand text-white rounded-xl uppercase cursor-pointer flex items-center justify-center gap-3"
         >
          <motion.div
   
@@ -197,7 +197,7 @@ const Hero = ({ isContentVisible }) => {
         </motion.button>
 
         <motion.button
-          initial={{ y: 50, scale: 1.1, opacity: 0, filter: "blur(20px)" }}
+          initial={{ y: 50, scale:window.innerWidth<640?1.05:1.1, opacity: 0, filter: "blur(20px)" }}
           whileInView={{
             y: 0,
             filter: "blur(0px)",
@@ -229,7 +229,7 @@ const Hero = ({ isContentVisible }) => {
             },
           }}
            viewport={{ once: true }}
-          className=" px-6 shadow-brand py-2.5 md:py-3 uppercase font-[heading] tracking-wide   bg-black  text-white rounded-xl cursor-pointer flex items-center justify-center gap-1"
+          className=" px-6 shadow-brand py-2.5 md:py-3 uppercase font-[heading] tracking-wide  text-xs  bg-black  text-white rounded-xl cursor-pointer flex items-center justify-center gap-1"
         >
          
         <div className="-ml-1">
