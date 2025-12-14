@@ -91,7 +91,7 @@ null,
  
 
   return (
-    <section className="relative w-full   flex flex-col items-center    ">
+    <section className="relative w-full h-[40vh] md:h-screen  flex flex-col items-center  md:mb-10   ">
      
       
 
@@ -100,7 +100,7 @@ null,
         
         
         <div 
-          className="w-full h-full flex flex-col p-2 sm:p-4 items-center justify-center mask-l-from-70% mask-r-from-70% mask-b-from-70% "
+          className="w-full h-full flex flex-col p-2 sm:p-4 items-center justify-center mask-l-from-70% mask-r-from-70% mask-b-from-50% "
           style={{
            
             transform: window.innerWidth < 640 

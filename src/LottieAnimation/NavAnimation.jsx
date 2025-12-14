@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
-function Linkedin({classname}) {
+function Nav({classname}) {
  
 
   
@@ -9,12 +9,12 @@ function Linkedin({classname}) {
   return (
     
   
-     <div className="h-6 w-6  absolute -right-8 -top-[1px] invert">
+     <div className="h-12 w-12 bg-white rounded-md flex items-center justify-center  ">
   <DotLottieReact
-    src="/lottie/linkedin.lottie"
+    src="/lottie/nav.lottie"
     loop
     autoplay
-    className="w-full h-full "
+    
   />
 </div>
 
@@ -23,4 +23,4 @@ function Linkedin({classname}) {
   );
 }
 
-export default Linkedin;
+export default Nav;

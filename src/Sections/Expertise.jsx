@@ -7,8 +7,8 @@ const expertiseItems = [
   {
     id: 1,
     gridClass: "md:col-span-3 md:row-span-3",
-    bgImage: "./images/sphere1.png",
-    decorImage: "./images/api.png",
+    bgImage: "./images/sphere1.webp",
+    decorImage: "./images/api.webp",
     decorClass: "h-80 md:h-120 lg:h-100 absolute right-0 -bottom-5 md:-bottom-10 object-cover",
     decorSpeedMobile: "0.05",
     decorSpeedDesktop: "0.03",
@@ -18,8 +18,8 @@ const expertiseItems = [
   {
     id: 2,
     gridClass: " md:col-span-3 md:row-span-4",
-    bgImage: "./images/bento.png",
-    decorImage: "./images/cloudbn.png",
+    bgImage: "./images/bento.webp",
+    decorImage: "./images/cloudbn.webp",
     decorClass: "h-85 md:h-150  lg:h-180 object-cover",
     decorSpeedMobile: "0.03",
     decorSpeedDesktop: "0.12",
@@ -30,8 +30,8 @@ const expertiseItems = [
   {
     id: 3,
     gridClass: " md:col-span-3 md:row-span-4",
-    bgImage: "./images/bento2.png",
-    decorImage: "./images/micro.png",
+    bgImage: "./images/bento2.webp",
+    decorImage: "./images/micro.webp",
     decorClass: "h-60 md:h-100 absolute right-0 -bottom-5 lg:-bottom-10 object-cover",
     decorSpeedMobile: "0.05",
     decorSpeedDesktop: "0.1",
@@ -41,8 +41,8 @@ const expertiseItems = [
   {
     id: 4,
     gridClass: "md:col-span-3 md:row-span-3",
-    bgImage: "./images/sphere1.png",
-    decorImage: "./images/db.png",
+    bgImage: "./images/sphere1.webp",
+    decorImage: "./images/db.webp",
     decorClass: "h-80 md:h-112 absolute right-0 -bottom-20 lg:-bottom-25 opacity-80 object-cover",
     decorSpeedMobile: "0.05",
     decorSpeedDesktop: "0.05",
@@ -83,7 +83,7 @@ const Expertise = () => {
               whileInView={{ scale: 1 }}
               transition={{ duration: 0.5, ease: circOut }}
               viewport={{ once: true }}
-              className="relative h-full w-full shadow-[0_4px_6px_-2px_rgb(151_151_185)] rounded-xl overflow-hidden"
+              className={'relative h-full w-full shadow-[0_4px_6px_-2px_rgb(151_151_185)] rounded-xl overflow-hidden  '}
               style={{
                 backgroundImage: `url(${item.bgImage})`,
                 backgroundSize: "cover",

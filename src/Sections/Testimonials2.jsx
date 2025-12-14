@@ -79,7 +79,7 @@ const Testimonials2 = () => {
            {testimonials.map((item, index) => {
             return (
               <motion.div  
-                initial={{ opacity: 0, filter: "blur(100px)" }} 
+                initial={{ opacity: 0, filter: "blur(20px)" }} 
                 whileInView={{
                   opacity: 1,
                   filter: "blur(0px)",

@@ -21,7 +21,7 @@ const About = () => {
          <AnimatedPara para={para}/>
         <Tools/>
        
-          {/* <AnimatedPara para={para2}/> */}
+          <AnimatedPara para={para2}/>
       
        </div>
 
