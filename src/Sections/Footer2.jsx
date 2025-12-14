@@ -1,16 +1,19 @@
 import React from 'react'
-import { Instagram, Linkedin, Mail, Github } from 'lucide-react'
+
 
 import {motion} from 'motion/react'
 import H1 from "../Components/H1";
+import Instagram from '../LottieAnimation/Instagram';
 
 import Button from '../Components/Button';
+import Gmail from '../LottieAnimation/Gmail';
+import Linkedin from '../LottieAnimation/Linkedin';
 
 const Footer2 = () => {
   const buttons = [
-    { label: 'instagram', img: './images/instagram.gif', imgClassName: 'h-10 absolute -right-11 -top-[7px]' },
-    { label: 'gmail', img: './images/mail2.gif', imgClassName: 'h-7 absolute -right-10 -top-[6px]' },
-    { label: 'linkedin', img: './images/linkedin.gif', imgClassName: 'h-7 absolute -right-10 -top-[5px]' },
+    { label: 'instagram', img:<Instagram/> , imgClassName: 'h-10 absolute -right-11 -top-[7px]' },
+    { label: 'gmail', img: <Gmail/>, imgClassName: 'h-7 absolute -right-10 -top-[6px]' },
+    { label: 'linkedin', img: <Linkedin/>, imgClassName: 'h-7 absolute -right-10 -top-[5px]' },
     { label: 'github', img: './images/git.gif', imgClassName: 'h-7 absolute -right-10 -top-[6px]' }
   ]
 

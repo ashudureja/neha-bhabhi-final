@@ -22,13 +22,13 @@ const Awards = () => {
       title: "Making IT Real Award",
       company: "Fidelity International",
       period: "2021-2022",
-      comp:<Trophy9  classname="h-80 w-80"/>
+      comp:<Trophy9/>
     },
     {
       title: "Bi-Annual Award",
       company: "Fidelity International",
       period: "2020-2021",
-       comp:<Trophy1/>
+       comp:<Trophy7/>
     },
     {
       title: "On The Spot Award",
@@ -41,19 +41,19 @@ const Awards = () => {
       company: "Nasscom WSC",
       period: "2015-2016",
       //  url:"./images/trophy94.gif"
-       comp:<Trophy8/>
+       comp:<Trophy1/>
     },
     {
       title: "Global Finalist",
       company: "Microsoft Apps Challenge",
       period: "2014-2015",
       //  url:"./images/trophy72.gif"
-       comp:<Trophy5/>
+       comp:<Trophy4/>
     }
   ];
 
   return (
-    <div className="min-h-screen mt-30 md:mt-40 px-4 ">
+    <div className="min-h-screen mt-30 md:mt-40 px-4   ">
       
        <H3>[ACHIEVMENTS]</H3>
       <div className='flex justify-between    h-full w-full'>

@@ -8,7 +8,7 @@ function Trophy9({classname}) {
 
   return (
     
-   <div className="h-80 w-80 flex items-center justify-center">
+   <div className="h-50 w-50 md:h-70 md:w-70 flex items-center justify-center">
      <DotLottieReact
     //  style={{
     //     filter: "invert(1)",      // <-- Inverts colors
