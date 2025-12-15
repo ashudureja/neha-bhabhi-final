@@ -109,7 +109,7 @@ const Testimonials2 = () => {
                       opacity: 1,
                       filter: "blur(0px)",
                       transition: {
-                        delay: 0.01,
+                       
                         duration: 0.8,
                         ease: [0.25, 0.4, 0.25, 1],
                       },

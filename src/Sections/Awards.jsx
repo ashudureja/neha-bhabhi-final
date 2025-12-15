@@ -13,8 +13,10 @@ import Trophy8 from '../LottieAnimation/Trophy8';
 import Trophy9 from '../LottieAnimation/Trophy9';
 
 
-// import { RightLine } from './Line';
-// import { LeftLine } from './Line';
+
+
+import { RightLine } from '../Components/Line';
+import { LeftLine } from '../Components/Line';
 
 const Awards = () => {
   const awards = [
@@ -57,14 +59,14 @@ const Awards = () => {
       
        <H3>[ACHIEVMENTS]</H3>
       <div className='flex justify-between    h-full w-full'>
-                {/* <LeftLine/> */}
+                <LeftLine/>
 
       <div className="flex flex-wrap items-center justify-center  gap-6 ">
         {awards.map((award, index) => (
           <AwardCard key={index} award={award} index={index} />
         ))}
       </div>
-      {/* <RightLine/> */}
+      <RightLine/>
       </div>
     </div>
   );

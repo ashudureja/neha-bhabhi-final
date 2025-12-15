@@ -1,5 +1,5 @@
 import React from "react";
-import { motion ,useScroll, useTransform } from "motion/react";
+import { motion, useScroll, useTransform } from "motion/react";
 
 import { MdEmail, MdDownload } from "react-icons/md";
 import UnicornBackground from "./UnicornBackground";
@@ -45,21 +45,19 @@ const blurVariants2 = {
 const shakeVariants = {
   shake: {
     x: [0, -5, 5, -5, 5, 0], // shake left-right
-    transition: { duration: 0.6, ease: "easeInOut" }
-  }
-}
+    transition: { duration: 0.6, ease: "easeInOut" },
+  },
+};
 
 const Hero = ({ isContentVisible }) => {
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start start", "end 0.3 "]
+    offset: ["start start", "end 0.3 "],
   });
 
- 
   const y = useTransform(scrollYProgress, [0, 1], [0, 50]);
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 0.90]);
-
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 0.9]);
 
   const words = ["Backend", "Developer"];
   const para = `Specialized in building scalable, high performance systems with clean architecture and efficient data flows. I focus on writing reliable backend services, optimizing system performance, and delivering secure, production ready solutions that help businesses grow.`;
@@ -77,11 +75,13 @@ const Hero = ({ isContentVisible }) => {
   const imageCopy = [...images, ...images];
 
   return (
- 
-     <motion.div style={{y}} ref={containerRef}  className="min-h-screen  mask-b-from-90% lg:mask-b-from-80% w-full relative flex flex-col gap-7 items-center justify-center p-5 bg-cover overflow-hidden  ">
-     
-      <UnicornBackground/>
-   
+    <motion.div
+      style={{ y }}
+      ref={containerRef}
+      className="min-h-screen  mask-b-from-90% lg:mask-b-from-80% w-full relative flex flex-col gap-7 items-center justify-center p-5 bg-cover overflow-hidden  "
+    >
+      <UnicornBackground />
+
       <motion.img
         variants={blurVariants}
         initial="initial"
@@ -96,7 +96,7 @@ const Hero = ({ isContentVisible }) => {
         initial="initial"
         whileInView="animate"
         transition={blurVariants.transition}
-        className="h-20 absolute bottom-35 left-30 hidden sm:block" 
+        className="h-20 absolute bottom-35 left-30 hidden sm:block"
         src="./images/stars5.webp"
       />
 
@@ -109,16 +109,16 @@ const Hero = ({ isContentVisible }) => {
       >
         {/* Neha Valecha */}
       </motion.h1>
-      
+
       <div className="relative mt-20">
-        <H1 text="Backend Developer"/>
+        <H1 text="Backend Developer" />
 
         <MySVG />
         <motion.p
           variants={blurVariants}
           initial="initial"
           whileInView="animate"
-           viewport={{ once: true }}
+          viewport={{ once: true }}
           transition={blurVariants.transition}
           className="absolute -top-6 left-20 font-[heading] uppercase"
         >
@@ -141,7 +141,7 @@ const Hero = ({ isContentVisible }) => {
                 ease: [0.25, 0.4, 0.25, 1],
               },
             }}
-             viewport={{ once: true }}
+            viewport={{ once: true }}
             key={index}
           >
             {word}
@@ -150,100 +150,115 @@ const Hero = ({ isContentVisible }) => {
       </div>
 
       <div className="flex gap-6 md:gap-8">
+       <motion.button
+  initial={{
+    y: 50,
+    scale: window.innerWidth < 640 ? 1.05 : 1.1,
+    opacity: 0,
+    filter: "blur(20px)",
+  }}
+  whileInView={{
+    y: 0,
+    filter: "blur(0px)",
+    opacity: 1,
+    scale: 1,
+    transition: {
+      opacity: {
+        delay: 1,
+        duration: 1,
+        ease: [0.25, 0.4, 0.25, 1],
+      },
+      filter: {
+        delay: 1,
+        duration: 1,
+        ease: [0.25, 0.4, 0.25, 1],
+      },
+      y: {
+        delay: 1,
+        duration: 1,
+        ease: [0.25, 0.4, 0.25, 1],
+      },
+      scale: {
+        delay: 1 + 1,
+        duration: 0.5,
+        ease: [0.85, 0, 0.15, 1],
+      },
+    },
+  }}
+  viewport={{ once: true }}
+  className="px-5 py-2.5 text-xs md:text-sm md:py-3 font-[heading] tracking-wide bg-black shadow-brand group text-white rounded-xl uppercase cursor-pointer"
+>
+  <div className="relative flex items-center justify-center gap-3 overflow-hidden">
+    <span className="flex relative items-center gap-4 group-hover:translate-x-[160px] group-hover:opacity-0 transition-all duration-300 ease-out">
+      <img
+        className="h-5"
+        src="https://media.tenor.com/ju4PztDv8WcAAAAj/firstrequestrecords-first-request.gif"
+        alt=""
+      />
+      Contact Me
+    </span>
+    <span className="absolute flex items-center gap-4 translate-x-[-160px] opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300 ease-out">
+      <img
+        className="h-5"
+        src="https://media.tenor.com/ju4PztDv8WcAAAAj/firstrequestrecords-first-request.gif"
+        alt=""
+      />
+      Contact Me
+    </span>
+  </div>
+</motion.button>
+
         <motion.button
-          initial={{ y: 50, scale:window.innerWidth<640?1.05:1.1, opacity: 0, filter: "blur(20px)" }}
-          whileInView={{
-            y: 0,
-            filter: "blur(0px)",
-            opacity: 1,
-            scale: 1,
-            transition: {
-              opacity: {
-                delay: 1,
-                duration: 1,
-                ease: [0.25, 0.4, 0.25, 1],
-              },
-              filter: {
-                delay: 1,
-                duration: 1,
-                ease: [0.25, 0.4, 0.25, 1],
-              },
-
-              y: {
-                delay: 1,
-                duration: 1,
-                ease: [0.25, 0.4, 0.25, 1],
-              },
-
-              scale: {
-                delay: 1 + 1,
-                duration: 0.5,
-                ease: [0.85, 0, 0.15, 1],
-              },
-            },
-          }}
-           viewport={{ once: true }}
-          className="px-5 py-2.5 text-xs md:text-sm md:py-3 font-[heading] tracking-wide bg-black shadow-brand text-white rounded-xl uppercase cursor-pointer flex items-center justify-center gap-3"
-        >
-         <motion.div
-  
-      className="inline-block"
-    >
-      {/* <MdEmail className="text-2xl" /> */}
-      <img className="h-5" src="https://media.tenor.com/ju4PztDv8WcAAAAj/firstrequestrecords-first-request.gif"></img>
-      {/* <Contact/> */}
-    </motion.div>
-          Contact Me
-        </motion.button>
-
-        <motion.button
-          initial={{ y: 50, scale:window.innerWidth<640?1.05:1.1, opacity: 0, filter: "blur(20px)" }}
-          whileInView={{
-            y: 0,
-            filter: "blur(0px)",
-            opacity: 1,
-            scale: 1,
-            transition: {
-              opacity: {
-                delay: 1,
-                duration: 1,
-                ease: [0.25, 0.4, 0.25, 1],
-              },
-              filter: {
-                delay: 1,
-                duration: 1,
-                ease: [0.25, 0.4, 0.25, 1],
-              },
-
-              y: {
-                delay: 1,
-                duration: 1,
-                ease: [0.25, 0.4, 0.25, 1],
-              },
-
-              scale: {
-                delay: 1 + 1,
-                duration: 0.5,
-                ease: [0.85, 0, 0.15, 1],
-              },
-            },
-          }}
-           viewport={{ once: true }}
-          className=" px-6 shadow-brand py-2.5 md:py-3 uppercase font-[heading] tracking-wide  text-xs  md:text-sm bg-black  text-white rounded-xl cursor-pointer flex items-center justify-center gap-1"
-        >
-         
-        <div className="-ml-1">
-           <Download/>
-        </div>
-       
-          <span>Resume</span>
-           
-        </motion.button>
-
-       
+  initial={{
+    y: 50,
+    scale: window.innerWidth < 640 ? 1.05 : 1.1,
+    opacity: 0,
+    filter: "blur(20px)",
+  }}
+  whileInView={{
+    y: 0,
+    filter: "blur(0px)",
+    opacity: 1,
+    scale: 1,
+    transition: {
+      opacity: {
+        delay: 1,
+        duration: 1,
+        ease: [0.25, 0.4, 0.25, 1],
+      },
+      filter: {
+        delay: 1,
+        duration: 1,
+        ease: [0.25, 0.4, 0.25, 1],
+      },
+      y: {
+        delay: 1,
+        duration: 1,
+        ease: [0.25, 0.4, 0.25, 1],
+      },
+      scale: {
+        delay: 1 + 1,
+        duration: 0.5,
+        ease: [0.85, 0, 0.15, 1],
+      },
+    },
+  }}
+  viewport={{ once: true }}
+  className="group px-6 shadow-brand py-2.5 md:py-3 uppercase font-[heading] tracking-wide text-xs md:text-sm bg-black text-white rounded-xl cursor-pointer"
+>
+  <div className="relative flex items-center justify-center gap-1 overflow-hidden">
+    <span className="flex relative items-center gap-4 group-hover:translate-x-[160px] group-hover:opacity-0 transition-all duration-300 ease-out">
+      <Download />
+      Resume
+    </span>
+    <span className="absolute flex items-center gap-4 translate-x-[-160px] opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300 ease-out">
+      <Download />
+      Resume
+    </span>
+  </div>
+</motion.button>
       </div>
     </motion.div>
-
   );
 };
 
@@ -274,4 +289,3 @@ const MySVG = () => {
     </motion.svg>
   );
 };
-
