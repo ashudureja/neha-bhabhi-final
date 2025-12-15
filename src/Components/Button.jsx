@@ -3,9 +3,11 @@ import {motion} from 'motion/react'
 import Instagram from '../LottieAnimation/Instagram'
 
 
-const Button = ({index, children, img, imgClassName}) => {
+const Button = ({index, children, img, imgClassName,link}) => {
   return (
-    <motion.button  
+    <motion.a 
+    href={link} 
+    target="_blank"
       initial={{
         opacity: 0,
         y: 20,
@@ -35,7 +37,7 @@ const Button = ({index, children, img, imgClassName}) => {
            {img}
         </span>
       </div>
-    </motion.button>
+    </motion.a>
   )
 }
 

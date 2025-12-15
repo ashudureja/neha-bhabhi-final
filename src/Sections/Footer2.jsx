@@ -12,10 +12,10 @@ import Github from '../LottieAnimation/Github';
 
 const Footer2 = () => {
   const buttons = [
-    { label: 'instagram', img:<Instagram/> , imgClassName: 'h-10 absolute -right-11 -top-[7px]' },
-    { label: 'gmail', img: <Gmail/>, imgClassName: 'h-7 absolute -right-10 -top-[6px]' },
-    { label: 'linkedin', img: <Linkedin/>, imgClassName: 'h-7 absolute -right-10 -top-[5px]' },
-    { label: 'github', img:<Github/>, imgClassName: 'h-7 absolute -right-10 -top-[6px]' }
+    { label: 'instagram', img:<Instagram/> , link:"https://www.instagram.com/_nehavalecha_/" },
+    { label: 'gmail', img: <Gmail/>, link:"" },
+    { label: 'linkedin', img: <Linkedin/>, link:"https://www.linkedin.com/in/neha-valecha/" },
+    { label: 'github', img:<Github/>, link:"" }
   ]
 
   return (
@@ -26,7 +26,7 @@ const Footer2 = () => {
        </div>
         <div className='grid grid-cols-2  z-10 md:grid-cols-4  mt-4 items-center justify-center gap-4'>
           {buttons.map((btn, index) => (
-            <Button key={index} index={index} img={btn.img} imgClassName={btn.imgClassName}>
+            <Button key={index} index={index} img={btn.img} link={btn.link}>
               {btn.label}
             </Button>
           ))}

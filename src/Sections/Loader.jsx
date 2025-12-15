@@ -71,14 +71,14 @@ const EXIT_ANIMATION_DURATION_SEC = 1.5; // Duration of the clip-path transition
       exit="exit" className='bg-black h-screen w-full flex items-center justify-center overflow-hidden'>
       <div className='flex items-center gap-2'>
         <motion.img 
-          className='h-20'
+          className=' h-10 md:h-20'
           src="./images/bhb2.gif"
           variants={imageVariants}
           initial="hidden"
           animate="visible"
         />
         <motion.div 
-          className='text-white text-2xl uppercase flex gap-2  font-[heading]'
+          className='text-white text-xl md:text-2xl uppercase flex gap-2  font-[heading]'
           variants={containerVariants}
           initial="hidden"
           animate="visible"

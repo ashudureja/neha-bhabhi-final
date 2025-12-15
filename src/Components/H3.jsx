@@ -21,7 +21,7 @@ const H3 = ({ children, color = "black" }) => {
                 filter: "blur(0px)",
               
                 transition: {
-                delay:0.1,
+               
                   duration: 0.8,
                   ease: [0.25, 0.4, 0.25, 1],
                 },
