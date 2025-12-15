@@ -32,10 +32,10 @@ const ExperienceCard = ({ exp, index }) => {
         y,
         scale
       }}
-      className="w-full  relative border border-gray-50 bg-gray-200 backdrop-blur-3xl rounded-2xl  lg:rounded-4xl p-2 sm:p-3 shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
+      className="w-full  relative border border-gray-50 bg-gray-200 backdrop-blur-3xl rounded-3xl  lg:rounded-4xl p-2 sm:p-3 shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
     >
       <motion.div 
-        className="relative bg-gradient-to-b from-transparent via-yellow-50 to-yellow-400 rounded-2xl   overflow-hidden lg:rounded-3xl h-full sm:h-70 p-6 border border-[#e0e0eb] flex flex-col shadow-[0_4px_6px_-2px_rgb(151_151_185)]"
+        className="relative bg-gradient-to-b from-transparent via-yellow-50 to-yellow-400 rounded-3xl   overflow-hidden lg:rounded-3xl h-full sm:h-70 p-6 border border-[#e0e0eb] flex flex-col shadow-[0_4px_6px_-2px_rgb(151_151_185)]"
       >
        {/* <div className=' bg-[url("./images/light.svg")] bg-center inset-0 absolute -z-10 ' style={{opacity,y}}></div> */}
        <SparklesCore

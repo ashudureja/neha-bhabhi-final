@@ -30,7 +30,7 @@ const Testimonials2 = () => {
       start: "top bottom",
       end: "bottom top",
       onUpdate: (self) => {
-        if (self.progress >= 0.7) {
+        if (self.progress >= 0.6) {
           gsap.set(element, { backgroundColor: "#eaeaea" });
           gsap.set(element.querySelectorAll('[data-text]'), { color: "#000000" });
           gsap.set(element.querySelectorAll('[data-comma]'), { color: "#000000" });

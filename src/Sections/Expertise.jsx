@@ -76,14 +76,14 @@ const Expertise = () => {
             whileInView={{ y: 1 }}
             transition={{ duration: 1, ease: circOut }}
             viewport={{ once: true }}
-            className={`${item.gridClass} shadow-[0_3px_10px_rgb(0,0,0,0.2)] h-75 md:h-full  overflow-hidden bg-gray-200 backdrop-blur-3xl rounded-xl p-2`}
+            className={`${item.gridClass} shadow-[0_3px_10px_rgb(0,0,0,0.2)] h-75 md:h-full  overflow-hidden bg-gray-200 backdrop-blur-3xl rounded-2xl p-2`}
           >
             <motion.div
               initial={{ scale: 1.3 }}
               whileInView={{ scale: 1 }}
               transition={{ duration: 0.5, ease: circOut }}
               viewport={{ once: true }}
-              className={'relative h-full w-full shadow-[0_4px_6px_-2px_rgb(151_151_185)] rounded-xl overflow-hidden  '}
+              className={'relative h-full w-full shadow-[0_4px_6px_-2px_rgb(151_151_185)] rounded-2xl overflow-hidden  '}
               style={{
                 backgroundImage: `url(${item.bgImage})`,
                 backgroundSize: "cover",
